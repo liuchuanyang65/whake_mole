@@ -1,0 +1,1 @@
+{"type":"Scene","props":{"width":1080,"height":1920},"compId":2,"child":[{"type":"WXOpenDataViewer","props":{"y":998,"x":525.5,"width":513,"iconSign":"wx","height":513,"runtime":"laya.ui.WXOpenDataViewer"},"compId":4}],"loadList":[],"loadList3D":[]}

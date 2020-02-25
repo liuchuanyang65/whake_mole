@@ -1,0 +1,4 @@
+{
+  "code": "const hole_config = {\r\n    mouse_pos: [\r\n        { x: 2, y: 0 }, { x: 189, y: 0 }, { x: 388, y: 3 },\r\n        { x: -24, y: 93 }, { x: 194, y: 98 }, { x: 393, y: 93 },\r\n        { x: -31, y: 188 }, { x: 192, y: 195 }, { x: 413, y: 198 }\r\n    ],\r\n    hammer_pos: [\r\n        { x: -101, y: -73 }, { x: 86, y: -73 }, { x: 285, y: -70 },\r\n        { x: -127, y: 0 }, { x: 91, y: 25 }, { x: 290, y: 20 },\r\n        { x: -134, y: 115 }, { x: 98, y: 122 }, { x: 310, y: 125 }\r\n    ],\r\n    score_pos: []\r\n};\r\nexport default hole_config;\r\n",
+  "references": []
+}

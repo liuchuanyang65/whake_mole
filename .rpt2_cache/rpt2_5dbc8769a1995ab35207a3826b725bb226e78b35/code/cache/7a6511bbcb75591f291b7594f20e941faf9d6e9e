@@ -1,0 +1,8 @@
+{
+  "code": "import game_mgr from \"./script/game_mgr\";\r\nimport hammer from \"./script/hammer\";\r\nimport mouse from \"./script/mouse\";\r\nexport default class GameConfig {\r\n    constructor() {\r\n    }\r\n    static init() {\r\n        var reg = Laya.ClassUtils.regClass;\r\n        reg(\"script/game_mgr.ts\", game_mgr);\r\n        reg(\"script/hammer.ts\", hammer);\r\n        reg(\"script/mouse.ts\", mouse);\r\n    }\r\n}\r\nGameConfig.width = 640;\r\nGameConfig.height = 1136;\r\nGameConfig.scaleMode = \"fixedwidth\";\r\nGameConfig.screenMode = \"none\";\r\nGameConfig.alignV = \"top\";\r\nGameConfig.alignH = \"left\";\r\nGameConfig.startScene = \"main_scence.scene\";\r\nGameConfig.sceneRoot = \"\";\r\nGameConfig.debug = true;\r\nGameConfig.stat = false;\r\nGameConfig.physicsDebug = false;\r\nGameConfig.exportSceneToJson = true;\r\nGameConfig.init();\r\n",
+  "references": [
+    "/Users/liuchuanyang/WeChatProjects/my_mouse/src/script/game_mgr.ts",
+    "/Users/liuchuanyang/WeChatProjects/my_mouse/src/script/hammer.ts",
+    "/Users/liuchuanyang/WeChatProjects/my_mouse/src/script/mouse.ts"
+  ]
+}

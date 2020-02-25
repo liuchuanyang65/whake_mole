@@ -1,0 +1,5 @@
+<page>
+   <item name="mouse_scence.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="test.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="main_scence.scene" props="" ifExport="分离模式" aName=""/>
+</page>

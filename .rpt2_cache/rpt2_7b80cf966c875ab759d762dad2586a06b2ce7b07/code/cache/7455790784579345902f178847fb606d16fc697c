@@ -1,0 +1,10 @@
+{
+  "code": "import game_mgr from \"./script/game_mgr\";\r\nimport hammer from \"./script/hammer\";\r\nimport score from \"./script/score\";\r\nimport start_game from \"./script/start_game\";\r\nimport mouse from \"./script/mouse\";\r\nexport default class GameConfig {\r\n    constructor() {\r\n    }\r\n    static init() {\r\n        var reg = Laya.ClassUtils.regClass;\r\n        reg(\"script/game_mgr.ts\", game_mgr);\r\n        reg(\"script/hammer.ts\", hammer);\r\n        reg(\"script/score.ts\", score);\r\n        reg(\"script/start_game.ts\", start_game);\r\n        reg(\"script/mouse.ts\", mouse);\r\n    }\r\n}\r\nGameConfig.width = 1080;\r\nGameConfig.height = 1920;\r\nGameConfig.scaleMode = \"fixedwidth\";\r\nGameConfig.screenMode = \"vertical\";\r\nGameConfig.alignV = \"top\";\r\nGameConfig.alignH = \"left\";\r\nGameConfig.startScene = \"TestScene.scene\";\r\nGameConfig.sceneRoot = \"\";\r\nGameConfig.debug = false;\r\nGameConfig.stat = false;\r\nGameConfig.physicsDebug = false;\r\nGameConfig.exportSceneToJson = true;\r\nGameConfig.init();\r\n",
+  "references": [
+    "C:/Users/dell/Desktop/my_mouse/src/script/game_mgr.ts",
+    "C:/Users/dell/Desktop/my_mouse/src/script/hammer.ts",
+    "C:/Users/dell/Desktop/my_mouse/src/script/score.ts",
+    "C:/Users/dell/Desktop/my_mouse/src/script/start_game.ts",
+    "C:/Users/dell/Desktop/my_mouse/src/script/mouse.ts"
+  ]
+}

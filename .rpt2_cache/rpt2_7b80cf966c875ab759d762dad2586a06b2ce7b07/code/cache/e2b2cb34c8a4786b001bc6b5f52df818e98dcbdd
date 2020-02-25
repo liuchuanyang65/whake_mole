@@ -1,0 +1,6 @@
+{
+  "code": "import gameMgr from './game_mgr';\r\nexport default class StartGame extends Laya.Script {\r\n    constructor() {\r\n        super();\r\n    }\r\n    onEnable() {\r\n    }\r\n    onDisable() {\r\n    }\r\n    onUpdate() {\r\n    }\r\n    onStart() {\r\n    }\r\n    onClick() {\r\n        gameMgr.instance.showWhichBack(2);\r\n    }\r\n}\r\n",
+  "references": [
+    "C:/Users/dell/Desktop/my_mouse/src/script/game_mgr.ts"
+  ]
+}

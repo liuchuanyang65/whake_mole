@@ -1,0 +1,9 @@
+{
+  "code": "import { gameData } from \"./gameData\";\r\nexport default class main_mgr extends Laya.Script {\r\n    constructor() {\r\n        super();\r\n    }\r\n    BeginGame() {\r\n        if (gameData._instance.PlayModel == 0) {\r\n            this.self_score_box.visible = true;\r\n            this.self_icon.skin = gameData.player.avatarUrl;\r\n            this.self_name.text = gameData.player.nickName;\r\n            console.log(gameData.player.avatarUrl);\r\n            this.challenge_score_box.visible = false;\r\n        }\r\n        else {\r\n            this.self_score_box.visible = true;\r\n            this.self_icon.skin = gameData.player.avatarUrl;\r\n            this.self_name.text = gameData.player.nickName;\r\n            this.challenge_score_box.visible = true;\r\n            this.challenge_icon.skin = gameData.player.c_avatarUrl;\r\n            this.challenge_name.text = gameData.player.c_nickName;\r\n            this.challenge_score.text = gameData.player.c_maxScore.toString();\r\n        }\r\n    }\r\n}\r\n",
+  "references": [
+    "C:/Users/dell/Desktop/my_mouse/src/script/game_mgr.ts",
+    "C:/Users/dell/Desktop/my_mouse/src/script/gameData.ts",
+    "C:/Users/dell/Desktop/my_mouse/src/script/WXCloud.ts",
+    "C:/Users/dell/Desktop/my_mouse/src/script/Share.ts"
+  ]
+}

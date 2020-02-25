@@ -1,0 +1,7 @@
+{
+  "code": "import { gameData } from \"./gameData\";\r\nexport default class over_mgr extends Laya.Script {\r\n    constructor() {\r\n        super();\r\n        this.all_score = null;\r\n        this.icon_Img = null;\r\n        this.name_text = null;\r\n        this.back_btn = null;\r\n    }\r\n    ShowOver(mgr) {\r\n        this.mgr = mgr;\r\n        if (Laya.Browser.onMiniGame) {\r\n            this.icon_Img.skin = gameData.player.avatarUrl;\r\n            this.name_text.text = gameData.player.nickName;\r\n        }\r\n        this.all_score.text = this.mgr.score.toString();\r\n        this.back_btn.on(Laya.Event.CLICK, this, this.OnClickBack);\r\n    }\r\n    OnClickBack() {\r\n        this.mgr.showWhichBack(1);\r\n    }\r\n}\r\n",
+  "references": [
+    "C:/Users/dell/Desktop/my_mouse/src/script/game_mgr.ts",
+    "C:/Users/dell/Desktop/my_mouse/src/script/gameData.ts"
+  ]
+}

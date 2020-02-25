@@ -1,0 +1,9 @@
+{
+  "code": "import { gameData } from \"./gameData\";\r\nimport { WXCloud } from \"./WXCloud\";\r\nimport { Share } from \"./Share\";\r\nexport default class over_mgr extends Laya.Script {\r\n    constructor() {\r\n        super();\r\n    }\r\n    ShowOver(mgr) {\r\n        this.mgr = mgr;\r\n        var maxScore = this.mgr.score > gameData.player.maxScore ? this.mgr.score : gameData.player.maxScore;\r\n        if (Laya.Browser.onMiniGame) {\r\n            this.icon_Img.skin = gameData.player.avatarUrl;\r\n            this.name_text.text = gameData.player.nickName;\r\n            var data = {\r\n                avatarUrl: gameData.player.avatarUrl,\r\n                nickName: gameData.player.nickName,\r\n                score: maxScore,\r\n            };\r\n            WXCloud._instance.SelfCloudSave(gameData.player.id, data);\r\n        }\r\n        console.log(maxScore);\r\n        this.all_score.text = this.mgr.score.toString();\r\n        this.max_score.text = maxScore.toString();\r\n        this.back_btn.on(Laya.Event.CLICK, this, this.OnClickBack);\r\n        this.challenge_btn.on(Laya.Event.CLICK, this, this.onClickChallenge);\r\n    }\r\n    OnClickBack() {\r\n        this.mgr.showWhichBack(1);\r\n    }\r\n    onClickChallenge() {\r\n        Share._instance.doShare(gameData.player.nickName);\r\n    }\r\n}\r\n",
+  "references": [
+    "C:/Users/dell/Desktop/my_mouse/src/script/game_mgr.ts",
+    "C:/Users/dell/Desktop/my_mouse/src/script/gameData.ts",
+    "C:/Users/dell/Desktop/my_mouse/src/script/WXCloud.ts",
+    "C:/Users/dell/Desktop/my_mouse/src/script/Share.ts"
+  ]
+}

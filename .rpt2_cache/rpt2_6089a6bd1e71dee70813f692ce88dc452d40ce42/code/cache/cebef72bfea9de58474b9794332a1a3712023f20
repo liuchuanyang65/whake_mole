@@ -1,0 +1,4 @@
+{
+  "code": "export default class Score extends Laya.Script {\r\n    constructor() {\r\n        super();\r\n    }\r\n    onEnable() {\r\n    }\r\n    onDisable() {\r\n    }\r\n    onUpdate() {\r\n    }\r\n    showScore(mgr, type = 1, index) {\r\n        var score = this.owner;\r\n        score.skin = \"res/score_\" + type + \".png\";\r\n        score.rotation = 0;\r\n        score.alpha = 1;\r\n        var time_line = Laya.TimeLine.to(score, {\r\n            y: score.y - 15,\r\n            alpha: 0\r\n        }, 300, null, 200);\r\n        time_line.play(0, false);\r\n        time_line.on(Laya.Event.COMPLETE, this, function () {\r\n            score.removeSelf();\r\n            mgr.scoreCount(type);\r\n        });\r\n    }\r\n    onStart() {\r\n    }\r\n}\r\n",
+  "references": []
+}

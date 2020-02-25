@@ -1,0 +1,4 @@
+{
+  "code": "export class gameData {\r\n    constructor() {\r\n        gameData._instance = this;\r\n        gameData.player = new PlayData();\r\n    }\r\n}\r\nexport class PlayData {\r\n    constructor() {\r\n        this.avatarUrl = \"\";\r\n        this.nickName = \"\";\r\n    }\r\n}\r\n",
+  "references": []
+}

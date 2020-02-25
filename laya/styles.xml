@@ -1,0 +1,4 @@
+<res>
+   <item name="comp/button.png" type="Button" props="label=单人开始游戏@@!@@x=-57@@!@@y=-65"/>
+   <item name="res/btn_souquan.png" type="Button" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+</res>

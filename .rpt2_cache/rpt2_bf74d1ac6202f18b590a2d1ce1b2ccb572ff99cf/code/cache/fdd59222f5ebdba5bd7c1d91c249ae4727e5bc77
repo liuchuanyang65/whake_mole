@@ -1,0 +1,4 @@
+{
+  "code": "export class gameData {\r\n    constructor() {\r\n        gameData._instance = this;\r\n    }\r\n}\r\n",
+  "references": []
+}

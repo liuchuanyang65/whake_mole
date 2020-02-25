@@ -1,0 +1,4 @@
+{
+  "code": "export default class ClickHideSelf extends Laya.Script {\r\n    constructor() {\r\n        super();\r\n    }\r\n    onClick() {\r\n        if (this.target != null) {\r\n            this.target.visible = false;\r\n        }\r\n    }\r\n}\r\n",
+  "references": []
+}
